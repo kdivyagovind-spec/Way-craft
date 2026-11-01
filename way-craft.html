@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WayCraft | Plan Your Journey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <h1>WayCraft</h1>
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#explore">Explore</a>
+        <a href="#plan">Plan</a>
+        <a href="#journey">Journey</a>
+        <a href="#options">Options</a>
+        <a href="#final">Final Plan</a>
+    </div>
+</nav>
+
+<main>
+
+<header id="home" class="hero">
+    <p>TRAVEL • PLAN • EXPERIENCE</p>
+    <h2>From budget to boarding.</h2>
+    <p>Build a journey that fits your time, interests and budget.</p>
+    <a class="btn" href="#plan">Start Planning</a>
+</header>
+
+
+<section id="explore" class="section explore">
+    <p class="tag">EXPLORE</p>
+    <h2>Find your next destination</h2>
+    <p class="intro">Explore a few destinations before creating your trip.</p>
+
+    <div class="destinations">
+
+        <article class="destination">
+            <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=700&q=80"
+                 alt="Goa beach">
+            <h3>Goa</h3>
+            <p>Beaches, forts, food and relaxed coastal experiences.</p>
+            <ul>
+                <li>Beach & Sunset</li>
+                <li>Food & Culture</li>
+            </ul>
+            <a href="#plan">Plan this trip →</a>
+        </article>
+
+        <article class="destination">
+            <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=700&q=80"
+                 alt="Jaipur palace">
+            <h3>Jaipur</h3>
+            <p>Discover royal architecture, markets and local culture.</p>
+            <ul>
+                <li>Heritage</li>
+                <li>Shopping & Food</li>
+            </ul>
+            <a href="#plan">Plan this trip →</a>
+        </article>
+
+        <article class="destination">
+            <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=700&q=80"
+                 alt="Kashmir mountains">
+            <h3>Kashmir</h3>
+            <p>Mountains, lakes and peaceful nature-filled experiences.</p>
+            <ul>
+                <li>Nature</li>
+                <li>Adventure</li>
+            </ul>
+            <a href="#plan">Plan this trip →</a>
+        </article>
+
+        <article class="destination">
+            <img src="https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=700&q=80"
+                 alt="Bengaluru city">
+            <h3>Bengaluru</h3>
+            <p>Explore cafés, gardens, culture and modern city life.</p>
+            <ul>
+                <li>City Life</li>
+                <li>Food & Nature</li>
+            </ul>
+            <a href="#plan">Plan this trip →</a>
+        </article>
+
+    </div>
+</section>
+
+
+<section id="plan" class="section plan">
+    <p class="tag">BUILD YOUR TRIP</p>
+    <h2>Tell us about your journey</h2>
+
+    <form>
+
+        <fieldset>
+            <legend>Basic Details</legend>
+
+            <div class="form-grid">
+                <label>Name
+                    <input type="text" placeholder="Your name" required>
+                </label>
+
+                <label>Email
+                    <input type="email" placeholder="your@email.com" required>
+                </label>
+
+                <label>Starting From
+                    <input type="text" placeholder="Bengaluru">
+                </label>
+
+                <label>Destination
+                    <select>
+                        <option>Goa</option>
+                        <option>Jaipur</option>
+                        <option>Kashmir</option>
+                        <option>Bengaluru</option>
+                    </select>
+                </label>
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Trip Schedule</legend>
+
+            <div class="form-grid">
+                <label>Travel Date
+                    <input type="date">
+                </label>
+
+                <label>Preferred Time
+                    <input type="time">
+                </label>
+
+                <label>Number of Days
+                    <input type="number" min="1" max="30" placeholder="1">
+                </label>
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Travel Preferences</legend>
+
+            <p>Travelling With</p>
+            <div class="choices">
+                <label><input type="radio" name="travel"> Solo</label>
+                <label><input type="radio" name="travel"> Friends</label>
+                <label><input type="radio" name="travel"> Family</label>
+            </div>
+
+            <p>Interests</p>
+            <div class="choices">
+                <label><input type="checkbox"> Food</label>
+                <label><input type="checkbox"> Nature</label>
+                <label><input type="checkbox"> Adventure</label>
+                <label><input type="checkbox"> Culture</label>
+            </div>
+
+            <div class="form-grid">
+                <label>Budget
+                    <input type="range" min="1000" max="50000">
+                </label>
+
+                <label>Budget Category
+                    <select>
+                        <option>Budget</option>
+                        <option>Comfort</option>
+                        <option>Premium</option>
+                    </select>
+                </label>
+            </div>
+
+            <label>Special Request
+                <textarea placeholder="Anything you want included?"></textarea>
+            </label>
+        </fieldset>
+
+        <div class="form-buttons">
+            <button type="submit">Create My Plan</button>
+            <button type="reset">Reset</button>
+        </div>
+
+    </form>
+</section>
+
+
+<section id="journey" class="section journey">
+    <p class="tag">YOUR SAMPLE JOURNEY</p>
+    <h2>One Day in Goa</h2>
+
+    <div class="trip-info">
+        <div><b>Destination</b><span>Goa</span></div>
+        <div><b>Duration</b><span>1 Day</span></div>
+        <div><b>Travelling With</b><span>Friends</span></div>
+        <div><b>Interests</b><span>Food + Nature</span></div>
+    </div>
+
+    <div class="timeline">
+        <div><b>08:00</b><span>Breakfast at a local café</span></div>
+        <div><b>10:00</b><span>Relax at Baga Beach</span></div>
+        <div><b>01:00</b><span>Lunch and local Goan food</span></div>
+        <div><b>03:00</b><span>Visit Fort Aguada</span></div>
+        <div><b>06:30</b><span>Watch the sunset</span></div>
+        <div><b>08:00</b><span>Dinner and return</span></div>
+    </div>
+</section>
+
+
+<section class="section expenses">
+    <p class="tag">WHERE YOUR MONEY GOES</p>
+    <h2>Estimated Expenses</h2>
+
+    <table>
+        <caption>Goa — 1 Day Estimated Budget</caption>
+        <thead>
+            <tr>
+                <th>Expense</th>
+                <th>Estimated Cost</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr><td>Travel</td><td>₹1,000</td></tr>
+            <tr><td>Stay</td><td>₹1,200</td></tr>
+            <tr><td>Breakfast</td><td>₹250</td></tr>
+            <tr><td>Lunch</td><td>₹400</td></tr>
+            <tr><td>Activities</td><td>₹800</td></tr>
+            <tr><td>Local Travel</td><td>₹500</td></tr>
+            <tr><td>Dinner</td><td>₹400</td></tr>
+            <tr><td>Miscellaneous</td><td>₹300</td></tr>
+            <tr class="total"><th>Total</th><th>₹4,850</th></tr>
+        </tbody>
+    </table>
+
+    <div class="budget-box">
+        <span>Budget: ₹5,000</span>
+        <span>Estimated: ₹4,850</span>
+        <strong>Remaining: ₹150</strong>
+    </div>
+</section>
+
+
+<section id="options" class="section options">
+    <p class="tag">COMPARE</p>
+    <h2>Choose your travel style</h2>
+
+    <div class="plans">
+
+        <article class="plan-card">
+            <p>PLAN A</p>
+            <h3>Slow & Scenic</h3>
+            <h4>₹4,850</h4>
+            <p>For travellers who prefer a relaxed day.</p>
+            <ul>
+                <li>Beach time</li>
+                <li>Local food</li>
+                <li>Fort visit</li>
+                <li>Sunset experience</li>
+            </ul>
+            <a href="#final">Choose Plan A</a>
+        </article>
+
+        <article class="plan-card featured">
+            <p>PLAN B</p>
+            <h3>Active & Exciting</h3>
+            <h4>₹5,300</h4>
+            <p>For travellers who want more activities.</p>
+            <ul>
+                <li>Beach activities</li>
+                <li>Adventure experience</li>
+                <li>Fort visit</li>
+                <li>Night exploration</li>
+            </ul>
+            <a href="#final">Choose Plan B</a>
+        </article>
+
+    </div>
+</section>
+
+
+<section id="final" class="section final">
+    <p class="tag">FINAL PLAN</p>
+    <h2>Your journey is ready.</h2>
+
+    <div class="final-box">
+        <h3>Goa • Plan B</h3>
+
+        <div class="final-details">
+            <p><b>Starting:</b> Bengaluru</p>
+            <p><b>Duration:</b> 1 Day</p>
+            <p><b>Style:</b> Adventure</p>
+            <p><b>Estimated Cost:</b> ₹5,300</p>
+        </div>
+
+        <p class="route">Bengaluru → Goa → Baga → Fort Aguada → Sunset → Dinner</p>
+
+        <ul>
+            <li>Keep some extra money for unexpected expenses.</li>
+            <li>Check weather before leaving.</li>
+            <li>Carry water and necessary essentials.</li>
+        </ul>
+
+        <strong>Pack your bags. Your WayCraft journey begins here.</strong>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <h3>WayCraft</h3>
+    <p>From budget to boarding.</p>
+    <p>© 2026 WayCraft</p>
+</footer>
+
+</body>
+</html>

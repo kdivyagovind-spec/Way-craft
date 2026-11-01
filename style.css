@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: aliceblue;
+    color: darkslategray;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: white;
+    padding: 16px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightsteelblue;
+}
+
+.navbar h1 {
+    color: coral;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: darkslategray;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: coral;
+}
+
+/* COMMON */
+.hero,
+.section {
+    padding: 75px 8%;
+}
+
+.tag {
+    color: coral;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 38px;
+    margin: 8px 0 12px;
+}
+
+a {
+    color: indianred;
+}
+
+/* HERO */
+.hero {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: seashell;
+}
+
+.hero h2 {
+    font-size: 58px;
+    line-height: 1.05;
+    max-width: 650px;
+    color: darkslategray;
+}
+
+.hero > p:nth-of-type(2) {
+    max-width: 520px;
+    margin: 15px 0 25px;
+    color: slategray;
+}
+
+.btn {
+    width: fit-content;
+    padding: 12px 22px;
+    background: coral;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* EXPLORE */
+.explore {
+    background: aliceblue;
+}
+
+.intro {
+    margin-bottom: 30px;
+    color: slategray;
+}
+
+.destinations {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.destination {
+    background: white;
+    padding-bottom: 20px;
+    border: 1px solid lightsteelblue;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.destination img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.destination h3,
+.destination p,
+.destination ul,
+.destination a {
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.destination h3 {
+    margin-top: 15px;
+}
+
+.destination p {
+    font-size: 14px;
+}
+
+.destination ul {
+    padding-left: 18px;
+    margin-top: 8px;
+    font-size: 13px;
+}
+
+.destination a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* PLAN / FORM */
+.plan {
+    background: lavender;
+}
+
+form {
+    max-width: 900px;
+    margin-top: 30px;
+}
+
+fieldset {
+    border: 1px solid thistle;
+    padding: 22px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    background: white;
+}
+
+legend {
+    color: indianred;
+    padding: 0 8px;
+    font-weight: bold;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+label {
+    font-size: 14px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    margin-top: 6px;
+    padding: 10px;
+    border: 1px solid lightsteelblue;
+    border-radius: 4px;
+    background: aliceblue;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+input[type="range"] {
+    padding: 0;
+}
+
+.choices {
+    display: flex;
+    gap: 20px;
+    margin: 8px 0 20px;
+}
+
+textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.form-buttons button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 5px;
+    background: coral;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-buttons button[type="reset"] {
+    background: slategray;
+}
+
+/* JOURNEY */
+.journey {
+    background: honeydew;
+}
+
+.trip-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin: 30px 0;
+}
+
+.trip-info div {
+    background: white;
+    padding: 18px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.trip-info span {
+    display: block;
+}
+
+.timeline {
+    max-width: 800px;
+    border-left: 3px solid coral;
+    padding-left: 25px;
+}
+
+.timeline div {
+    padding: 12px 0;
+}
+
+.timeline b {
+    color: indianred;
+    margin-right: 20px;
+}
+
+/* EXPENSES */
+.expenses {
+    background: mistyrose;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin-top: 25px;
+    background: white;
+}
+
+caption {
+    text-align: left;
+    padding: 12px 0;
+    font-weight: bold;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid lightgray;
+    text-align: left;
+}
+
+.total {
+    font-weight: bold;
+}
+
+.budget-box {
+    max-width: 800px;
+    background: peachpuff;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+/* OPTIONS */
+.options {
+    background: aliceblue;
+}
+
+.plans {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    max-width: 850px;
+    margin-top: 30px;
+}
+
+.plan-card {
+    background: white;
+    padding: 30px;
+    border: 1px solid lightsteelblue;
+    border-radius: 6px;
+}
+
+.plan-card h4 {
+    font-size: 30px;
+    color: indianred;
+    margin: 8px 0;
+}
+
+.plan-card ul {
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+.plan-card a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.featured {
+    border: 3px solid coral;
+}
+
+/* FINAL */
+.final {
+    background: lavenderblush;
+}
+
+.final-box {
+    max-width: 850px;
+    background: white;
+    padding: 30px;
+    border: 1px solid thistle;
+    border-radius: 6px;
+    margin-top: 25px;
+}
+
+.final-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+.route {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding: 15px 0;
+    margin-bottom: 15px;
+}
+
+.final-box ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 35px;
+    background: slategray;
+    color: white;
+}
+
+footer h3 {
+    color: peachpuff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .destinations {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .trip-info {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 42px;
+    }
+
+    .form-grid,
+    .plans,
+    .destinations,
+    .trip-info {
+        grid-template-columns: 1fr;
+    }
+
+    .budget-box {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
