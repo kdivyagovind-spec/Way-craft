@@ -84,8 +84,8 @@ The project provided an opportunity to explore:
 
 ## Project Links
 
-- **GitHub Repository:** 
-- **Live Website:** 
+- **GitHub Repository:*https://github.com/kdivyagovind-spec/Way-craft* 
+- **Live Website:*https://way-craft.vercel.app/* 
 
 ## Author
 
